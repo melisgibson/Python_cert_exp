@@ -41,7 +41,7 @@ with open("server_ip.txt") as ip_file:
         if daysToExpiration < 45:
             response = client.send_email(
                 Destination={
-                    "ToAddresses": ["melcassidy45@gmail.com"],
+                    "ToAddresses": ["user@gmail.com"],
                 },
                 Message={
                     "Body": {
@@ -57,7 +57,7 @@ with open("server_ip.txt") as ip_file:
                         "Data": "Certificate Expiring Soon",
                     },
                 },
-                Source="melcassidy45@gmail.com",
+                Source="user@gmail.com",
             )
 
 print(f"\nCert check complete!")
